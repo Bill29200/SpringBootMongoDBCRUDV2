@@ -29,6 +29,9 @@ public class PersonService {
 	public Person getByFirstName(String firstName) {
 		return personRepository.findByFirstName(firstName);
 	}
+	public Long count(){
+		return personRepository.count();
+	}
 	//...................................................................
 	//                            Update
 	//...................................................................

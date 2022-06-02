@@ -30,6 +30,10 @@ public class PersonController {
 	public Person getPerson(@RequestParam String firstName) {
 		return personService.getByFirstName(firstName);
 	}
+	@RequestMapping("/count")
+	public Long count() {
+		return personService.count();
+	}
 	//......................................................................
 	@RequestMapping("/getAll")
 	public List<Person> getAll() {
